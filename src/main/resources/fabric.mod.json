@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "better_transportation",
+	"version": "${version}",
+	"name": "Better Transportation",
+	"description": "Rebalances the different transportation methods to make them relevant again.",
+	"authors": [
+		"Tom Weiland"
+	],
+	"contact": {
+		"homepage": "https://tomweiland.net/",
+		"sources": "https://github.com/tom-weiland/better-transportation-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/better_transportation/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tomweiland.better_transportation.BetterTransportation"
+		],
+		"fabric-datagen": [
+			"net.tomweiland.better_transportation.BetterTransportationDataGenerator"
+		]
+	},
+	"mixins": [
+		"better_transportation.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
