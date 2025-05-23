@@ -3,7 +3,9 @@
 	"package": "net.tomweiland.better_transportation.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"DefaultMinecartControllerMixin"
+		"BlocksMixin",
+		"DefaultMinecartControllerMixin",
+		"IceBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
